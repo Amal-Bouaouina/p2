@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demande de position"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/EdPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="saisir un numéro"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Envoie SMS" />
+
+    <Button
+        android:id="@+id/btnFetchData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FetchData" />
+
+    <ListView
+        android:id="@+id/lv_position"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
